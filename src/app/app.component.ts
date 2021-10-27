@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calculadora-modularizada';
+  titulo = 'Aplicación Calculadora';
+  resultado:number;
+
+  procesarResultado(resultado:number) :void{
+    
+    this.resultado=resultado;
+
+  }
+
+
 }

@@ -1,0 +1,98 @@
+<div class="row">
+  <div class="row">
+    <div class="card" style="width: 28.5rem; height: 5rem">
+      <div class="card-head p-0">
+        <p>
+          <strong>{{ operacion }}</strong>
+        </p>
+      </div>
+      <div class="card-body p-0">
+        <h3>{{ entrada }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(7)"
+    >
+      7
+    </button>
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(8)"
+    >
+      8
+    </button>
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(9)"
+    >
+      9
+    </button>
+    <button class="btn btn-primary btn-lg col-sm-1 col me-2" (click)="operacionPrecionada('÷')">
+        ÷
+    </button>
+  </div>
+  <div class="row mt-2">
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(4)"
+    >
+      4
+    </button>
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(5)"
+    >
+      5
+    </button>
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(6)"
+    >
+      6
+    </button>
+    <button class="btn btn-primary btn-lg col-sm-1 col me-2" (click)="operacionPrecionada('x')">
+      X
+    </button>
+  </div>
+  <div class="row mt-2">
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(1)"
+    >
+      1
+    </button>
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(2)"
+    >
+      2
+    </button>
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(3)"
+    >
+      3
+    </button>
+    <button class="btn btn-primary btn-lg col-sm-1 col me-2" (click)="operacionPrecionada('-')">
+      -
+    </button>
+  </div>
+  <div class="row mt-2">
+    <button class="btn btn-danger btn-lg col-sm-1 col me-2" (click)="limpiarCadena()">
+      C
+    </button>
+    <button
+      class="btn btn-secondary btn-lg col-sm-1 col me-2"
+      (click)="ingresarNumero(0)"
+    >
+      0
+    </button>
+    <button class="btn btn-warning btn-lg col-sm-1 col me-2" (click)="calcularRestulado()">=</button>
+    <button class="btn btn-primary btn-lg col-sm-1 col me-2" (click)="operacionPrecionada('+')">
+      +
+    </button>
+  </div>
+</div>
